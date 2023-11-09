@@ -17,10 +17,10 @@ public class Customer {
     @Column(name = "email_id")
     String  emailId;
     @Column(name = "phone_no")
-    int phoneNo;
+    String phoneNo;
 
     public Customer(){}
-    public  Customer( int customer_id ,String firstName,String lastName,String emailId,int phoneNo){
+    public  Customer( int customer_id ,String firstName,String lastName,String emailId,String phoneNo){
        this.customer_id =customer_id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -61,11 +61,11 @@ public class Customer {
         this.emailId = emailId;
     }
 
-    public int getPhoneNo() {
+    public String getPhoneNo() {
         return phoneNo;
     }
 
-    public void setPhoneNo(int phoneNo) {
+    public void setPhoneNo(String phoneNo) {
         this.phoneNo = phoneNo;
     }
 
